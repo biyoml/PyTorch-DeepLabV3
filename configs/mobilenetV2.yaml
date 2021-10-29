@@ -1,0 +1,26 @@
+# Data
+train_csv: datasets/voc/trainaug.csv
+val_csv: datasets/voc/val.csv
+
+# Model
+backbone:
+  name: MobileNetV2
+  output_stride: 16
+input_size: 513
+num_classes: 21
+aspp_rates: null
+image_pooling: true
+dropout_rate: 0.1
+
+# Training
+batch_size: 16
+epochs: 46
+optim:
+  name: SGD
+  lr: 0.007
+  momentum: 0.9
+  weight_decay: 0.00004
+scheduler:
+  name: PolynomialLR
+  power: 0.9
+  total_steps: 30000

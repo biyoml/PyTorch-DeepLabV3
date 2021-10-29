@@ -1,0 +1,9 @@
+torch
+torchvision
+tensorboard
+matplotlib
+tqdm
+yacs
+pandas
+scipy
+flake8
